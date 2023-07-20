@@ -23,7 +23,7 @@ const fs = require("fs");
 
 const server = http.createServer((request, response) =>{
     const url = request.url; //req["url"] go zema url-to
-    const method = request.method; //imav samo request, mesto request.method
+    const method = request.method; //imav samo request, mesto request.method, zatoa ne ni rabotese
 
     console.log(url);
     if(url === "/"){ //HOME
@@ -36,9 +36,21 @@ const server = http.createServer((request, response) =>{
         return response.end();
     }
 
-    // if(url === "/test"){
-    //     console.log("Test");
-    // };
+    if(url === "/test"  && method === "GET"){
+        console.log("Test");
+        response.write("<html>");
+        response.write("<head><title>TEST</title><head>");
+        response.write("</html>");
+        return response.end();
+    };
+
+    if(url === "/students"){
+        response.end("Students");
+    }
+
+    if(url === "/message" && method === "GET"){
+        response.end("Sega e jasno!")
+    }
 
     if(url === "/message" && method === "POST"){
 
