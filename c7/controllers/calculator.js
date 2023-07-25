@@ -24,22 +24,22 @@ const postCalculator = async (req, res) => {
 
         case "sobiranje":
             result = Number(a) + Number(b);
-            res.end(`${result}`);
+            //res.end(`${result}`);
             break;
         case "odzemanje":
             result = Number(a) - Number(b);
-            res.end(`${result}`);
+            //res.end(`${result}`);
             break;
         case "mnozenje":
             result = Number(a) * Number(b);
-            res.end(`${result}`);
+            //res.end(`${result}`);
             break;
         case "delenje":
             result = Number(a) / Number(b);
-            res.end(`${result}`);
+            //res.end(`${result}`);
             break;
         default:
-            res.end("Nepoznat operator");
+            return res.end("Nepoznat operator");
     }
     try{
         let output = await parseTemplate("calculator", {data: result});
