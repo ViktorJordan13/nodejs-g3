@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <form action="/form<%= index !== -1 ? `?groceryIndex=${index}` : '' %>" method="post">
+        <input type="text" name="name" placeholder="name" value="<%= typeof grocery !== 'undefined' ? grocery.name : '' %>" />
+        <input type="text" name="manufacturer" placeholder="manufacturer" value="<%= typeof grocery !== 'undefined' ? grocery.manufacturer : '' %>" />
+        <input type="text" name="quantity" placeholder="quantity" value="<%= typeof grocery !== 'undefined' ? grocery.quantity : '' %>" />
+        <input type="text" name="daysLeftToUse" placeholder="daysLeftToUse" value="<%= typeof grocery !== 'undefined' ? grocery.daysLeftToUse : '' %>" />
+        <input type="text" name="placeWhereAvalible" placeholder="placeWhereAvalible" value="<%= typeof grocery !== 'undefined' ? grocery.placeWhereAvalible : '' %>" />
+        <button type="submit">Isprati</button>
+    </form>
+</body>
+</html>

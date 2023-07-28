@@ -1,0 +1,29 @@
+Izrabotete ednostavna Node.js express aplikacija za pravenje na lista na artikli za pazarenje (Groceries).
+Sekoj artikl treba da gi ima slednite informacii:
+1. Name (Ime)
+2. Manufacturer (Proizveduvac)
+3. Quantity (Kolicina)
+4. DaysLeftToUse (Uste kolku denovi moze da se iskoristat, do koga mu e rokot na traenje)
+5. PlaceWhereAvalible (Mesto na koe sto moze da se kupat)
+
+Podatocite treba da se zemaat od i da se cuvaat vo json datoteka .
+
+Aplikacijata treba da ima dve formi:
+-Edna forma na koja sto ke se vnesuvaat podatocite vo tekst polinja
+za site niv, i kopce so koe sto ke se ispratat.
+-Vtora forma koja sto ke ja predstavuva tabelata so vnesenite artikli,
+zaedno so kopce za brisenje na istite.
+
+Za front end delot koristete se sto vi e po zelba (html, css, ejs).
+
+BONUS:
+-Dodadete kopce za editiranje na veke vnesenite artikli, i sekako dodadete ja funcionalnosta
+za istoto.
+BONUS-BONUS:
+-Grupirajte gi site ruti vo srodni fajlovi vo poseben routes folder sto ke go kreirate, i kako takvi
+povikajte gi vo glavnata vlezna funkcija (Rutite da ne bidat vo index.js fajlot kako obicno).
+
+NAPOMENA:
+Redosledot (redniot broj) na artiklite ne ni e vazen (ke se obideme da gi kupime site
+sto se na listata bez razlika dali se prvi ili posledni), i kako takov ne mora da bide zapazen,
+odnosno moze istiot bez nikakov problem da se promeni.

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <table border="1" width="100%">
+        <tr>
+            <th>Name</th>
+            <th>Manufacturer</th>
+            <th>Quantity</th>
+            <th>Days Left To Use</th>
+            <th>Place Where Avalible</th>
+            <th>Бришење</th>
+            <th>Едитирање</th>
+        </tr>
+        <% data.forEach((grocery, i) => { %>
+            <tr>
+                <td><%= grocery.name %></td>
+                <td><%= grocery.manufacturer %></td>
+                <td><%= grocery.quantity %></td>
+                <td><%= grocery.daysLeftToUse %></td>
+                <td><%= grocery.placeWhereAvalible %></td>
+                <td>
+                    <a href="/brishi?groceryIndex=<%= i%>">Бриши</a>
+                </td>
+                <td>
+                    <a href="/editiraj?groceryIndex=<%= i%>">Едитирај</a>
+                </td>
+            </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
