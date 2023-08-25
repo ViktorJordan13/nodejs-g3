@@ -125,13 +125,13 @@ const data = 'Full Name: Viktor Jordanoski\nAge: 29\nProfession: Software Engine
 //3. find some package on npmjs.com and require => third module
 
 //http
-//daj mi gi podatocite (request) - eve ti gi podatocite (response
+//daj mi gi podatocite (request) - eve ti gi podatocite (response)
 
 //CRUD (CREATE, READ, UPDATE, DELETE)
 
 //Client-server arhitecture
 //Http request methods
-//1. GET -> no body, has path for reqursting data from server -> READ EXISTING DATA
+//1. GET -> no body, has path for requesting data from server -> READ EXISTING DATA
 //2. POST -> has body -> CREATE NEW ENTRY
 //3. PUT -> has body -> UPDATE EXISTING ENTRY
 //4. PATCH -> has body -> UPDATE EXISTING ENTRY PARTIALLY

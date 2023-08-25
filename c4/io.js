@@ -1,5 +1,5 @@
 //Promises have 3 states
-//fulfilled(success), pending, rejectd(faillure)
+//fulfilled(success), pending, rejected(faillure)
 
 //resolve(data) - data is an argument fron the readFile(function)
 //reject(error) - error is an argument from the readFile on fail

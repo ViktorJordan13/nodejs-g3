@@ -16,7 +16,7 @@ for (let i = arr.length-1; i >= 0; i--){
 
 //forEach
 const loops = arr.forEach((el) => el);
-//forEach ni ja nizata
+//forEach ni pominuva niz nizata
 //console.log('forEach primer', loops[0]);
 arr.forEach((element) => {
     //console.log(element);
@@ -30,7 +30,7 @@ const res = arr.find((el) => el === "a");
 //     }
 // });
 //console.log(res);
-//Idejata na find e da imame nekoj uslov, barame elemnt sto go ispolnuva toj uslov
+//Idejata na find e da imame nekoj uslov, barame element sto go ispolnuva toj uslov
 
 //Map
 // const mapEl = arr.map((el) => {
